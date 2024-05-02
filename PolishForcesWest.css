@@ -1,0 +1,71 @@
+:root {
+  --tlo-jasne: #fff; /* Domyślny kolor tła dla trybu jasnego */
+  --tekst-jasny: #333; /* Domyślny kolor tekstu dla trybu jasnego */
+  --jasny-link:#3E5C76;
+  --pasek-tło:#4a4e69;
+}
+
+.tryb-ciemny {
+  --tlo-jasne: #333; /* Kolor tła dla trybu ciemnego */
+  --tekst-jasny: #fff; /* Kolor tekstu dla trybu ciemnego */
+  --jasny-link:#748CAB;
+  --pasek-tło:#8d99ae;
+}
+
+.parent {
+  position: relative;
+}
+
+.pasek {
+  position: fixed;
+  top: 100px;
+  width: 60%;
+  right: 20%;
+  background-color: var(--pasek-tło);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.pasek2,.pasek3 {
+  position: absolute;
+  width: 60%;
+  right: 20%;
+  background-color: var(--pasek-tło);
+  color: white;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+}
+.pasek2 {
+  top: calc(100% + 20px); /* 20px odstępu od poprzedniego elementu */
+}
+
+.pasek3 {
+  top: calc(200% + 40px); /* 40px odstępu od poprzedniego elementu */
+}
+
+
+.button{
+  
+    background-color:#1D2D44; /* Kolor tła przycisku */
+    color: white; /* Kolor tekstu */
+    padding: 10px 20px; /* Wielkość wypełnienia */
+    border: none; /* Brak obramowania */
+    cursor: pointer; /* Kursor wskazujący na to, że przycisk jest klikalny */
+  position: fixed; /* Ustawienie pozycji przycisku */
+  top: 20px; /* Odległość od góry ekranu */
+  right: 20px; /* Odległość od prawej krawędzi ekranu */
+  
+}
+.button2{
+  background-color:#1D2D44; /* Kolor tła przycisku */
+  color: white; /* Kolor tekstu */
+  padding: 10px 20px; /* Wielkość wypełnienia */
+  border: none; /* Brak obramowania */
+  cursor: pointer; /* Kursor wskazujący na to, że przycisk jest klikalny */
+position: fixed; /* Ustawienie pozycji przycisku */
+top: 20px; /* Odległość od góry ekranu */
+left: 20px; /* Odległość od prawej krawędzi ekranu */
+}

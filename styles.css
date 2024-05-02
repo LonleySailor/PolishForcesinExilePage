@@ -1,0 +1,75 @@
+:root {
+  --tlo-jasne: #fff; /* Domyślny kolor tła dla trybu jasnego */
+  --tekst-jasny: #333; /* Domyślny kolor tekstu dla trybu jasnego */
+  --jasny-link:#3E5C76;
+}
+
+.tryb-ciemny {
+  --tlo-jasne: #333; /* Kolor tła dla trybu ciemnego */
+  --tekst-jasny: #fff; /* Kolor tekstu dla trybu ciemnego */
+  --jasny-link:#748CAB;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--tlo-jasne);
+  color: var(--tekst-jasny);
+
+  margin: 0;
+  padding: 0;
+}
+.link{
+  
+  color:var(--jasny-link);
+}
+.title{
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+button{
+  
+    background-color:#1D2D44; /* Kolor tła przycisku */
+    color: white; /* Kolor tekstu */
+    padding: 10px 20px; /* Wielkość wypełnienia */
+    border: none; /* Brak obramowania */
+    cursor: pointer; /* Kursor wskazujący na to, że przycisk jest klikalny */
+  position: fixed; /* Ustawienie pozycji przycisku */
+  top: 20px; /* Odległość od góry ekranu */
+  right: 20px; /* Odległość od prawej krawędzi ekranu */
+  
+}
+.MainPageTekst{
+ position: fixed;
+ top: 200px;
+ left: 100px;
+}
+.Image{
+  position: fixed;
+  border-radius: 20px;
+  top: 100px;
+  right: 50px;
+  height: 520px;
+  width: 300px;
+}
+.TekstPodIMG{
+  position: fixed;
+  top: 650px;
+  width: 300px;
+  right: 50px;
+}
+
+/* Dodatkowe style dla innych elementów na stronie */
+
+
+ 
+  
+
+ 
+  
+  
+ 
+  
+ 
