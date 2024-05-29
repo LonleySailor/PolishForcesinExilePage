@@ -10,10 +10,21 @@ function rozwinPasek() {
   }
   window.onload = function() {
     rozwinPasek();
-    rozwinPasek1();
+    rozwinPasek2();
+    rozwinPasek3();
 };
-function rozwinPasek1(){
+function rozwinPasek2(){
   var ukryteElementy = document.getElementById("ukryteElementy1");
+  if (ukryteElementy.style.display === "none") {
+    ukryteElementy.style.display = "block";
+    
+  } else {
+    ukryteElementy.style.display = "none";
+    
+  }
+}
+function rozwinPasek3(){
+  var ukryteElementy = document.getElementById("ukryteElementy2");
   if (ukryteElementy.style.display === "none") {
     ukryteElementy.style.display = "block";
     
