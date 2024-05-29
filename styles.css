@@ -15,21 +15,19 @@ body {
   font-family: Arial, sans-serif;
   background-color: var(--tlo-jasne);
   color: var(--tekst-jasny);
-
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-flow:column nowrap;
 }
 .link{
   
   color:var(--jasny-link);
 }
 .title{
-  position: fixed;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+text-align: center;
 }
-button{
+.button{
   
     background-color:#1D2D44; /* Kolor tła przycisku */
     color: white; /* Kolor tekstu */
@@ -42,26 +40,75 @@ button{
   
 }
 .MainPageTekst{
- position: fixed;
- top: 200px;
- left: 100px;
+ margin-top: 100px;
+ margin-left: 200px;
 }
-.Image{
+.image-container{
   position: fixed;
-  border-radius: 20px;
   top: 100px;
   right: 50px;
+}
+.Image{
+  border-radius: 20px;
   height: 520px;
   width: 300px;
 }
 .TekstPodIMG{
-  position: fixed;
-  top: 650px;
+  margin-top: 25px;
   width: 300px;
-  right: 50px;
 }
 
 /* Dodatkowe style dla innych elementów na stronie */
+.generals {
+position: relative;
+margin: 0 auto;
+width: 500px;
+height: 400px;
+}
+
+.generals figure {
+  position: absolute;
+  width: 500px;
+  height: 430px;
+  margin: 0;
+}
+
+.generals img {
+  width: 100%;
+  aspect-ratio: 5/4;
+  object-fit: cover;
+  display: block;
+}
+
+.generals figcaption {
+  display: block;
+  width: 500px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background */
+  color: white; /* Text color */
+  padding: 10px; /* Padding around the text */
+  text-align: center; /* Center the text */
+  box-sizing: border-box;
+}
+
+
+#prev, #next {
+  position: absolute;
+  top: 50%;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#prev {
+  left: 0px;
+}
+
+#next {
+  right: 0px;
+}
 
 
  
