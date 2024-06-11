@@ -1,10 +1,11 @@
 :root {
   --tlo-jasne: #fff;
-  /* Domyślny kolor tła dla trybu jasnego */
   --tekst-jasny: #333;
-  /* Domyślny kolor tekstu dla trybu jasnego */
   --jasny-link: #3E5C76;
   --pasek-tło: #4a4e69;
+  --tekst-stopka: #000000;
+  --kolor-stopka: #90e0ef;
+
 }
 
 .tryb-ciemny {
@@ -12,8 +13,34 @@
   /* Kolor tła dla trybu ciemnego */
   --tekst-jasny: #fff;
   /* Kolor tekstu dla trybu ciemnego */
+
   --jasny-link: #748CAB;
   --pasek-tło: #8d99ae;
+  --tekst-stopka: #ffffff;
+  --kolor-stopka: #03045e;
+}
+
+footer {
+
+  background-color: var(--kolor-stopka);
+  color: var(--tekst-stopka);
+  text-align: center;
+  padding: 10px;
+  height: 50px;
+  width: 100%;
+}
+
+footer p {
+  margin-bottom: 0;
+}
+
+footer a {
+  color: var(--tekst-stopka);
+  text-decoration: none;
+}
+
+.margines {
+  margin-bottom: 520px;
 }
 
 .parent {

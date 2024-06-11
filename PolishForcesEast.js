@@ -12,17 +12,37 @@ function zmienTryb() {
     });
 }
 
-document.querySelector('.pasek').addEventListener('click', function () {
-    var parent = document.querySelector('.parent');
-    var pasek = document.querySelector('.pasek');
-    var pasek2 = document.querySelector('.pasek2');
+function showContent(id) {
+    // Hide all content sections
+    document.querySelectorAll('.content').forEach(content => {
+        content.style.display = 'none';
 
-    // Dodaj klasę 'expanded' do rodzica
-    parent.classList.add('expanded');
+    });
 
-    // Oblicz wysokość rozszerzonego paska
-    var expandedHeight = pasek.offsetHeight;
+    // Show the selected content section
+    var content = document.getElementById(id + '-content');
+    content.style.display = 'block';
+    document.querySelector('.menu-button').forEach(content => {
 
-    // Przesuń .pasek2 o wysokość rozszerzonego paska
-    pasek2.style.top = 'calc(100% + ' + expandedHeight + 'px)';
+
+    });
+}
+
+
+document.querySelectorAll('.menu-button').forEach(button => {
+    button.addEventListener('click', () => {
+        // Remove 'active' class from all buttons
+        document.querySelectorAll('.menu-button').forEach(btn => btn.classList.remove('active'));
+
+        // Add 'active' class to the clicked button
+        button.classList.add('active');
+    });
 });
+
+
+
+
+
+
+
+

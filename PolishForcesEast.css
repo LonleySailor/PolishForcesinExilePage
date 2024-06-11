@@ -5,6 +5,9 @@
     /* Domyślny kolor tekstu dla trybu jasnego */
     --jasny-link: #3E5C76;
     --pasek-tło: #4a4e69;
+    --tekst-stopka: #000000;
+    --kolor-stopka: #90e0ef;
+    --kolor-przycisku: #bde0fe;
 }
 
 .tryb-ciemny {
@@ -14,6 +17,62 @@
     /* Kolor tekstu dla trybu ciemnego */
     --jasny-link: #748CAB;
     --pasek-tło: #8d99ae;
+    --tekst-stopka: #ffffff;
+    --kolor-stopka: #03045e;
+    --kolor-przycisku: #8ecae6;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--tlo-jasne);
+    color: var(--tekst-jasny);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.horizontal-line1 {
+    left: 0px;
+    position: fixed;
+    width: 300px;
+    /* Cover most of the width */
+    height: 4px;
+    /* Line thickness */
+    background-color: #3E5C76;
+    top: 60px;
+}
+
+.horizontal-line2 {
+    left: 721px;
+    position: fixed;
+    width: 850px;
+    /* Cover most of the width */
+    height: 4px;
+    /* Line thickness */
+    background-color: #3E5C76;
+    top: 60px;
+}
+
+footer {
+    background-color: var(--kolor-stopka);
+    color: var(--tekst-stopka);
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    width: 100%;
+    height: 40px;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+footer a {
+    color: var(--tekst-stopka);
+    text-decoration: none;
 }
 
 .button {
@@ -54,4 +113,50 @@
     /* Odległość od góry ekranu */
     left: 20px;
     /* Odległość od prawej krawędzi ekranu */
+}
+
+.menu {
+    top: 20px;
+    left: 300px;
+    position: fixed;
+    display: flex;
+    /* Use Flexbox for alignment */
+    justify-content: center;
+    /* Center the buttons horizontally */
+    /* Remove space between buttons */
+}
+
+.menu-button {
+    padding: 10px 20px;
+    background-color: var(--kolor-przycisku);
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border 0.3s ease;
+
+    border-top: 4px solid #3E5C76;
+    border-left: 4px solid #3E5C76;
+    border-right: 4px solid #3E5C76;
+    margin-left: -3px;
+    border-bottom: 4px solid #3E5C76;
+    /* Add a negative right margin to create overlap */
+}
+
+
+
+.menu-button.active {
+    border-bottom: none;
+    /* Adjust color and thickness as needed */
+}
+
+.content {
+    display: none;
+    /* Initially hide content */
+    margin-top: 20px;
+    /* Add top margin if needed */
+}
+
+.contentPosition {
+    position: fixed;
+    top: 100px;
+    left: 100px;
 }

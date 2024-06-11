@@ -1,13 +1,21 @@
 :root {
-  --tlo-jasne: #fff; /* Domyślny kolor tła dla trybu jasnego */
-  --tekst-jasny: #333; /* Domyślny kolor tekstu dla trybu jasnego */
-  --jasny-link:#3E5C76;
+  --tlo-jasne: #fff;
+  /* Domyślny kolor tła dla trybu jasnego */
+  --tekst-jasny: #333;
+  /* Domyślny kolor tekstu dla trybu jasnego */
+  --jasny-link: #3E5C76;
+  --tekst-stopka: #000000;
+  --kolor-stopka: #90e0ef;
 }
 
 .tryb-ciemny {
-  --tlo-jasne: #333; /* Kolor tła dla trybu ciemnego */
-  --tekst-jasny: #fff; /* Kolor tekstu dla trybu ciemnego */
-  --jasny-link:#748CAB;
+  --tlo-jasne: #333;
+  /* Kolor tła dla trybu ciemnego */
+  --tekst-jasny: #fff;
+  /* Kolor tekstu dla trybu ciemnego */
+  --jasny-link: #748CAB;
+  --tekst-stopka: #ffffff;
+  --kolor-stopka: #03045e;
 }
 
 
@@ -18,52 +26,91 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-flow:column nowrap;
+  flex-flow: column nowrap;
 }
-.link{
-  
-  color:var(--jasny-link);
+
+footer {
+
+  background-color: var(--kolor-stopka);
+  color: var(--tekst-stopka);
+  text-align: center;
+  padding: 10px;
+  height: 50px;
+  width: 100%;
 }
-.title{
-text-align: center;
+
+footer p {
+  margin-bottom: 0;
 }
-.button{
-  
-    background-color:#1D2D44; /* Kolor tła przycisku */
-    color: white; /* Kolor tekstu */
-    padding: 10px 20px; /* Wielkość wypełnienia */
-    border: none; /* Brak obramowania */
-    cursor: pointer; /* Kursor wskazujący na to, że przycisk jest klikalny */
-  position: fixed; /* Ustawienie pozycji przycisku */
-  top: 20px; /* Odległość od góry ekranu */
-  right: 20px; /* Odległość od prawej krawędzi ekranu */
-  
+
+footer a {
+  color: var(--tekst-stopka);
+  text-decoration: none;
 }
-.MainPageTekst{
- margin-top: 100px;
- margin-left: 200px;
+
+.link {
+
+  color: var(--jasny-link);
 }
-.image-container{
+
+.title {
+  text-align: center;
+}
+
+.button {
+
+  background-color: #1D2D44;
+  /* Kolor tła przycisku */
+  color: white;
+  /* Kolor tekstu */
+  padding: 10px 20px;
+  /* Wielkość wypełnienia */
+  border: none;
+  /* Brak obramowania */
+  cursor: pointer;
+  /* Kursor wskazujący na to, że przycisk jest klikalny */
+  position: fixed;
+  /* Ustawienie pozycji przycisku */
+  top: 20px;
+  /* Odległość od góry ekranu */
+  right: 20px;
+  /* Odległość od prawej krawędzi ekranu */
+
+}
+
+.margines {
+  margin-bottom: 100px;
+}
+
+.MainPageTekst {
+  margin-top: 100px;
+  margin-left: 200px;
+}
+
+.image-container {
   position: fixed;
   top: 100px;
   right: 50px;
 }
-.Image{
+
+.Image {
   border-radius: 20px;
   height: 520px;
   width: 300px;
 }
-.TekstPodIMG{
+
+.TekstPodIMG {
   margin-top: 25px;
   width: 300px;
 }
 
 /* Dodatkowe style dla innych elementów na stronie */
 .generals {
-position: relative;
-margin: 0 auto;
-width: 500px;
-height: 400px;
+  position: relative;
+  margin: 0 auto;
+  width: 500px;
+  height: 400px;
+  margin-bottom: 150px;
 }
 
 .generals figure {
@@ -84,15 +131,21 @@ height: 400px;
   display: block;
   width: 500px;
   height: 30px;
-  background-color: rgba(0, 0, 0, 0.5); /* Optional: semi-transparent background */
-  color: white; /* Text color */
-  padding: 10px; /* Padding around the text */
-  text-align: center; /* Center the text */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Optional: semi-transparent background */
+  color: white;
+  /* Text color */
+  padding: 10px;
+  /* Padding around the text */
+  text-align: center;
+  /* Center the text */
   box-sizing: border-box;
+
 }
 
 
-#prev, #next {
+#prev,
+#next {
   position: absolute;
   top: 50%;
   box-sizing: border-box;
@@ -109,14 +162,3 @@ height: 400px;
 #next {
   right: 0px;
 }
-
-
- 
-  
-
- 
-  
-  
- 
-  
- 

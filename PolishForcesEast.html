@@ -5,14 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🇵🇱 Wojsko Polskie po Klęsce Wrześniowej</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="PolishForcesEast.css">
     <button class="button" onclick="zmienTryb()">Zmień tryb</button><!--finished-->
 </head>
 <button class="button2" onclick="powrotDoGlownej()">Powrót do Głównej</button>
 
 <body>
+    <div class="menu">
+        <button class="menu-button" onclick="showContent('army'),toggleActiveStatus('army-btn') " id="army-btn">Armia
+            Lądowa</button>
+        <button class="menu-button" onclick="showContent('navy'),toggleActiveStatus('navy-btn') "
+            id="navy-btn">Marynarka
+            Wojenna</button>
+        <button class="menu-button" onclick="showContent('airforce'),toggleActiveStatus('airforce-btn') "
+            id="airforce-btn">Siły Powietrzne</button>
+    </div>
+    <div class="horizontal-line1"></div>
+    <div class="horizontal-line2"></div>
 
+
+    <!-- Content divs hidden initially -->
+    <div id="army-content" class="content contentPosition" style="margin-bottom: 0;">
+        <h2>Armia Lądowe </h2>
+        <p>Your text here...</p>
+
+    </div>
+    <div id="navy-content" class="content contentPosition" style="margin-bottom: 0;">
+        <h2>Marynarka Wojenna </h2>
+        <p>Your text here...</p>
+
+    </div>
+    <div id="airforce-content" class="content contentPosition" style="margin-bottom: 0;">
+        <h2>Siły Powietrzne </h2>
+        <p>Your text here...</p>
+
+    </div>
 
 </body>
 <script src="PolishForcesEast.js"></script>
-<link rel="stylesheet" href="PolishForcesEast.css">
+
+<footer>
+    <p>&copy; 2024 LonleySailor. Wszelkie prawa zastrzeżone.</p>
+    <a href="kontakt.html">Kontakt</a> |
+    <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+</footer>
+
+</html>
