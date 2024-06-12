@@ -29,6 +29,14 @@ body {
   flex-flow: column nowrap;
 }
 
+.TekstNadGenerals {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
 footer {
 
   background-color: var(--kolor-stopka);
@@ -109,20 +117,21 @@ footer a {
   position: relative;
   margin: 0 auto;
   width: 500px;
-  height: 400px;
+  height: 500px;
   margin-bottom: 150px;
 }
 
 .generals figure {
   position: absolute;
   width: 500px;
-  height: 430px;
+  height: 570px;
   margin: 0;
 }
 
 .generals img {
   width: 100%;
-  aspect-ratio: 5/4;
+  height: 100%;
+
   object-fit: cover;
   display: block;
 }

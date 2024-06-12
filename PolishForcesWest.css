@@ -20,6 +20,16 @@
   --kolor-stopka: #03045e;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--tlo-jasne);
+  color: var(--tekst-jasny);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
 footer {
 
   background-color: var(--kolor-stopka);
@@ -40,7 +50,7 @@ footer a {
 }
 
 .margines {
-  margin-bottom: 520px;
+  margin-bottom: 460px;
 }
 
 .parent {
